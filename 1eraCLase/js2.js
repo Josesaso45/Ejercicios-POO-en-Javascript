@@ -10,22 +10,22 @@ class mascota {
 }
 class gato extends mascota{
     sonidoMascota(){
-        return "miau";
+        return "GOAT";
     }
 }
 class perro extends mascota{
      sonidoMascota(){
-        return "Guau";
+        return "Siuuuu";
     }
 }
 
 function onomatopeya (mascota){
-    console.log(gatuno.nombre +" hace " + gatuno.sonidoMascota());
-    console.log(perruno.nombre +" hace " + perruno.sonidoMascota());
+    console.log(gatuno.nombre +" es " + gatuno.sonidoMascota());
+    console.log(perruno.nombre +" dice " + perruno.sonidoMascota());
 }
 
-const perruno = new perro("Pele");
-const gatuno = new gato("Maradona");
+const perruno = new perro("Cristiano Ronaldo");
+const gatuno = new gato("Messi");
 
 onomatopeya(perruno);
 onomatopeya(gatuno);

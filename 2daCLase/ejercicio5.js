@@ -1,29 +1,20 @@
 class Calculadora {
-    constructor(numero1,numero2){
-        this.numero1 = numero1;
-        this.numero2 = numero2;
-    }
 
-    suma (){
-        return sumaNum = this.numero1 + this.numero2;
+    static suma (numero1,numero2){
+        return numero1 + numero2;
     }
-    resta(){
-        return restaNum = this.numero1 - this.numero2;
+    static resta(numero1,numero2){
+        return numero1 - numero2;
     }
-    multiplicar(){
-        return multiplicarNum = this.numero1 * this.numero2;
+    static multiplicar(numero1,numero2){
+        return numero1 * numero2;
     }
-    dividir(){
-        return dividirNum = this.numero1 / this.numero2;
+    static dividir(numero1,numero2){
+        return numero1 / numero2;
     }
 }
 
-const resta = new resta() ;
-const resta = new resta() ;
-const resta = new resta() ;
-const resta = new resta() ;
-
-console.log();
-console.log();
-console.log();
-console.log();
+console.log("Suma:",Calculadora.sumar(5, 3));
+console.log("Resta:",Calculadora.restar(10, 4));
+console.log("Multiplicación:",Calculadora.multiplicar(6, 7));
+console.log("División:",Calculadora.dividir(20, 5));

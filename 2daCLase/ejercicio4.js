@@ -10,21 +10,28 @@ class Animal {
 
 class Cocodrilo extends Animal{
     hacerSonido(){
-        return "Mamabicho";
+        return "Hello";
     }
 }
 class Caiman extends Animal{
     hacerSonido(){
-        return "Mamaverga";
+        return "Hola";
     }
 }
 
-function onomatopeya (Animal){
-    console.log(cocodrilo.nombre +" hace " + cocodrilo.hacerSonido());
+/*function onomatopeya (Animal){
+    console.log(cocodrilo.nombre +" dice " + cocodrilo.hacerSonido());
+    console.log(caiman.nombre +" dice " + caiman.hacerSonido());
 }
-const cocodrilo = new Cocodrilo();
-const caiman = new Caiman();
+const cocodrilo = new Cocodrilo("Lucianeke");
+const caiman = new Caiman("Santiagueño");
 
 onomatopeya(cocodrilo);
-onomatopeya(caiman);
+onomatopeya(caiman);*/
+
+const mascotasDeCasa = [new Cocodrilo(),new Caiman,new Cocodrilo(),new Caiman];
+
+for(const animal of mascotasDeCasa){
+    console.log(animal.hacerSonido());
+}
 
